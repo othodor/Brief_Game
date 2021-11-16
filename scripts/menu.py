@@ -8,11 +8,7 @@ def menu():
     if choice == "1":
         player_choice()
     elif choice == "2":
-        score()
+        open("save.txt")
     elif choice == "3":
         exit()
 
-# Bonjour <name>, veux tu partir au combat ?
-# 1. Oui aller au combat (-> lance le jeu)
-# 2. Voir les scores (-> affiche les scores des joueurs précédents)
-# 3. Quitter le jeu.
