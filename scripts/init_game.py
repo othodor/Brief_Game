@@ -1,7 +1,12 @@
 
 def player_init():
-    return player_pv = 50
+    player_pv = 50
+    return player_pv
+
 def enemy_init():
-    return enemy_pv = 50 
+    enemy_pv = 50
+    return  enemy_pv
+
 def potion_init():
-    return potion_nbr = 3
+    potion_nbr = 3
+    return potion_nbr
