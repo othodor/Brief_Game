@@ -1,12 +1,14 @@
 import random
-from init_game import potion_init
+# from init_game import potion_init, player_init
+import player_choice
 
 
-
-def use_potion():
-    potion = random(15, 50)
+def use_potion(ppv, potion_nbr):
+    potion = random.randint(15, 50)
+    # potion_nbr = potion_init()
+    # player_pv = player_init()
     if potion_nbr>0:
-        player_pv += potion
+        ppv += potion
         potion_nbr -= 1 
     else:
         print("Dommage tu n’as plus de potion")

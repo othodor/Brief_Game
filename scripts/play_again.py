@@ -1,14 +1,16 @@
-from init_game import 
+from init_game import player_init, enemy_init, potion_init
 from menu import menu
-again = ("Yes", "No")
-print("Partie terminée. Veux-tu jouer une autre partie?")
+
 def play_again():
+    
+    print("Partie terminée. Veux-tu jouer une autre partie?")
     player_response = input()
-    for i in again:
-        if player_response == "Yes":
-            init_game()
-            menu()
-        if player_response == "No":
-            exit()
-
-
+    if player_response == "Yes":
+        player_init()
+        enemy_init()
+        potion_init()
+            
+    elif player_response == "No":
+        menu()
+    else:
+        print("Error, try again!")

@@ -1,9 +1,11 @@
 from player_attack import player_attack
-from potion import potion 
+from potion import use_potion 
 
-player_choice = ("Attack", "Potion")
-for i in player_choice:
-    if i==0:
+def choice():
+    player_choices = ("Attack", "Potion")
+    print(player_choices)
+    player_choice = input()
+    if player_choice=="Attack":
         player_attack()
-    if i==1:
-        potion()
+    if player_choice=="Potion":
+        use_potion()

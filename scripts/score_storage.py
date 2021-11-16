@@ -1,9 +1,7 @@
-from os import name
+from welcome import player_name
+from score import score
 
-
-from welcome import 
-
-score = {}
-with open("save.txt", "w") as save:
-    for i in score:
-        save.writelines(player_name: score_game)
+score_game=score()
+with open("save.txt", "a") as save:
+    for i in save:
+        save.write('\n'.join(player_name, score_game))

@@ -6,6 +6,4 @@ def welcome(player_name):
     return f'Bonjour {player_name}, veux tu partir au combat ?'
     
 
-# Print : Bienvenue dans ce jeu. Quel est votre pseudo?
-# Input(string)
 
