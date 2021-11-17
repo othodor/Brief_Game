@@ -13,7 +13,7 @@ player_name = welcome.welcome()
 
 """Display menu and ask the player to make a choice"""
 def menu():
-    player_choice = input("1. Oui aller au combat \n2. Voir les scores \n3. Quitter le jeu.")
+    player_choice = input("1. Oui aller au combat \n2. Voir les scores \n3. Quitter le jeu.\n")
     if player_choice == "1":
         return True
     elif player_choice == "2":
@@ -31,10 +31,10 @@ menu = menu()
 def choice(menu, pnbr, ppv, epv, name):
     display.display_info(name, ppv, pnbr, epv)
     if menu == True:
-        player_choice = input("1. Attaquer \n2.Boire une potion \nTape 1 ou 2")
+        player_choice = input("1. Attaquer \n2.Boire une potion \nTape 1 ou 2\n")
         while player_choice not in ["1", "2"]:
             print("Mauvaise réponse!")
-            player_choice = input("1. Attaquer \n2.Boire une potion \nTape 1 ou 2")
+            player_choice = input("1. Attaquer \n2.Boire une potion \nTape 1 ou 2\n")
         if player_choice == "1":
             epv = player_attack.player_attack(epv)
         elif player_choice == "2":
