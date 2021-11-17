@@ -1,5 +1,5 @@
 # Brief_Game
-## context:
+## Context
 
 This game is an achieved project by three students of Simplon Lille ( France.) We are students of the 2nd session of IA technicians. We started learning  Python. This project is about python basics ( particulary functions and tests.)
 
