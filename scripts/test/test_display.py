@@ -7,8 +7,7 @@ currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentfram
 parentdir = os.path.dirname(currentdir)
 sys.path.insert(0, parentdir) 
 
+from display import display_info  
 
-
-
-
-# affiche des pvs et potion du joueur et pvs de l'ennemi 
+def test_display():
+    assert display_info("Mark", 28, 1, 14) == "Mark, il vous reste 28 points de vie et 1 potion(s), l'ennemi a 14"
