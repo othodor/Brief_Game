@@ -11,8 +11,8 @@ potion_nbr = init_game.potion_nbr
 """Welcoming message, and first input asking for player name and if he's ready to play"""
 player_name = welcome.welcome()
 
-"""Display menu and ask the player to make a choice"""
 def menu():
+	"""Display menu and ask the player to make a choice"""
     player_choice = input("1. Oui aller au combat \n2. Voir les scores \n3. Quitter le jeu.\n")
     if player_choice == "1":
         return True
@@ -26,9 +26,8 @@ def menu():
         print("Huuh?")
 menu = menu()
 
-
-"""this fonction init player's turn he can choose between attack or drink a potion"""
 def choice(menu, pnbr, ppv, epv, name):
+	"""this fonction init player's turn he can choose between attack or drink a potion"""
     display.display_info(name, ppv, pnbr, epv)
     if menu == True:
         player_choice = input("1. Attaquer \n2.Boire une potion \nTape 1 ou 2\n")
@@ -48,8 +47,8 @@ def choice(menu, pnbr, ppv, epv, name):
     return pnbr, ppv, epv
 
 
-"""While Loop until the player or the enemy have no more PV"""
 def pv_check(epv, ppv):
+	"""While Loop until the player or the enemy have no more PV"""
     if epv <= 0:
         print("Partie gagnée.")
         return False
